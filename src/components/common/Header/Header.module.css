@@ -1,1 +1,54 @@
 /* Header 전용 스타일 (고정, active 메뉴, 반응형) */
+.headerContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    transition: opacity .3s linear;
+}
+
+.headerContent {
+    width: 100%;
+    max-width: 71.25rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    padding: 1.25rem 1.5rem;
+}
+
+.headerTitleButton {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: hsla(0, 0%, 100%, .7);
+    line-height: 2rem;
+}
+
+.headerSectionTitle {
+    display: flex;
+}
+
+.headerSectionButton{
+    padding: 0 1rem;
+    font-weight: 700;
+    color: hsla(0, 0%, 100%, .7);
+    line-height: 2rem;
+}
+
+button {
+    padding: 0;
+    background-color: unset;
+    border: none;
+    text-transform: none;
+    margin: 0;
+    font-size: inherit;
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+button:hover {
+    color: hsla(0, 0%, 100%, 1);
+}

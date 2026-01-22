@@ -1,1 +1,44 @@
 /* Home 페이지 스타일 */
+.homeContainer {
+    position: relative;
+}
+
+.homeContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(112, 93, 80, .6) 0, rgba(112, 93, 80, .8) 90%), url(/src/img/home.jpg) 50% no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.homeContenet {
+    width: 100%;
+    max-width: 71.25rem;
+    margin: 0 auto;
+    padding: 8.5rem 1.5rem 4rem;
+    text-align: center;
+}
+
+.homeTitle {
+    font-size: 3.75rem;
+    color: hsla(0, 0%, 100%, .9);
+    line-height: 1.25;
+    word-break: keep-all;
+}
+
+.homeDescription {
+    margin: 0 auto 2rem;
+    font-size: 1.25rem;
+    color: hsla(0, 0%, 100%, .7);
+}
+
+.homeButton {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f4623a;
+    border: none;
+    border-radius: 10rem;
+    color: #fff;
+    transition: background-color .2s ease-in-out;
+}
