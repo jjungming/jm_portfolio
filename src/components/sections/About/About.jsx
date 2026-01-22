@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
+import SectionTitle from '../../common/SectionTitle/SectionTitle';
 
 /* 자기소개 섹션 */
 const About = () => {
@@ -9,9 +10,7 @@ const About = () => {
       <div className={styles.aboutContent}>
 
         {/* Title */}
-        <div className={styles.aboutTitle}>
-          About Me
-        </div>
+        <SectionTitle title='About Me' />
         
         {/* 지기소개 내용 */}
         <div className={styles.aboutText}>
