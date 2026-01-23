@@ -1,1 +1,13 @@
 /* 프로젝트 카드, hover, 반응형 레이아웃 */
+.projectsContainer {
+    background-color: #ddd8ea;
+}
+
+.projectsContent {
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+}
+
+
