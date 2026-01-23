@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.css';
 import Header from '../src/components/common/Header/Header';
 import Home from '../src/pages/Home/Home';
 import About from '../src/components/sections/About/About';
@@ -8,7 +8,7 @@ import Projects from '../src/components/sections/Projects/Projects';
 
 function App() {
   return (
-    <div>
+    <div className={styles.appContainer}>
       <Header />
       <Home />
       <section id="about"><About /></section>
