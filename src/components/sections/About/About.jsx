@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
 import SectionTitle from '../../common/SectionTitle/SectionTitle';
-<<<<<<< HEAD
-=======
 import {
   IoPersonOutline,
   IoCalendarOutline,
@@ -20,7 +18,6 @@ const items = [
   { icon: <IoLocationOutline />, label: '이메일', value: '1010pjm@naver.com' },
   { icon: <IoSchoolOutline />, label: '학력', value: '청주대학교(인공지능소프트웨어학과)' },
 ];
->>>>>>> feature/about
 
 /* 자기소개 섹션 */
 const About = () => {
@@ -30,11 +27,7 @@ const About = () => {
       <div className={styles.aboutContent}>
 
         {/* Title */}
-<<<<<<< HEAD
-        <SectionTitle title='About Me' />
-=======
         <SectionTitle title="About Me" />           
->>>>>>> feature/about
         
         {/* 지기소개 내용 */}
         <div className={styles.aboutInfos}>
