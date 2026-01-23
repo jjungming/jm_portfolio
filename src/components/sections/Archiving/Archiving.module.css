@@ -1,1 +1,58 @@
 /* 링크 카드 UI, 아이콘 스타일 */
+.archivingContainer {
+    background-color: #ff0000;
+}
+
+.archivingContent {
+    width: 100%;
+    max-width: 71.25rem;
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+}
+
+.archivingWrapper{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    text-decoration: none;
+}
+
+.archivingItems {
+    width: 26rem;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: transform .2s ease;
+}
+
+.archivingImgWrapper {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.archivingImg {
+    color: transparent;
+    width: 70%;
+    height: auto;
+}
+
+.archivingURL {
+    margin-bottom: 1rem;
+    color: #258ddb;
+    text-decoration: none;
+}
+
+.archivingDescription {
+    font-size: .875rem;
+    color: #444;
+    
+}
+
+.archivingWrapper:hover {
+    transform: scale(1.05);
+}
+
+.archivingWrapper:hover .archivingURL {
+    text-decoration: underline;
+}
