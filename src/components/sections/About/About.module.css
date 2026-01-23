@@ -1,7 +1,7 @@
 /* About 섹션 레이아웃 및 타이포그래피 */
 .aboutContainer {
-    /* background-color: #ffffff; */
-    background-color: #fd0000;
+    background-color: #ffffff;
+    /* background-color: #fd0000; */
 }
 
 .aboutContent {
@@ -11,10 +11,46 @@
     margin: 0 auto;
 }
 
-.aboutTitle {
-
+.aboutInfos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.5rem;
 }
 
-.aboutText {
-    
+.aboutInfoWrapper{
+    width: 33.3333333333%;
+}
+
+.aboutInfo {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 2rem;
+    width: 100%;
+    max-width: 14rem;
+    margin: 0 auto;
+    opacity: .8;
+}
+.aboutItemIconWrapper{
+    position: relative;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aboutItemIcon {
+    font-size: 36px;
+    color: #4a4a4a;
+    transform: translateY(-4px);
+}
+
+.aboutItemLabel {
+    margin-bottom: .5rem;
+    font-weight: 700
+}
+
+.aboutItemValue {
+    font-size: .875rem;
+    white-space: pre-wrap;
 }
