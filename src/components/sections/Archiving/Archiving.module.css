@@ -1,6 +1,6 @@
 /* 링크 카드 UI, 아이콘 스타일 */
 .archivingContainer {
-    background-color: #ff0000;
+    background-color: #dbe4df;
 }
 
 .archivingContent {
@@ -49,10 +49,10 @@
     
 }
 
-.archivingWrapper:hover {
+.archivingItems:hover {
     transform: scale(1.05);
 }
 
-.archivingWrapper:hover .archivingURL {
+.archivingItems:hover .archivingURL {
     text-decoration: underline;
 }

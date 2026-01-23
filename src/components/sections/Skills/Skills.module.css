@@ -1,6 +1,6 @@
 /* 기술 카드 그리드, 아이콘 정렬 스타일 */
 .skillsContainer {
-    background: #ffc8a2;
+    background-color: #d7dde8;
 }
 
 .skillsContent {
@@ -52,6 +52,6 @@
     border-radius: .5rem;
     font-weight: 500;
     font-size: .875rem;
-    background-color: #ffc8a2;
-    color: #ffffff;
+    background-color: #edf1f7;
+    color: #2f2f2f;
 }
