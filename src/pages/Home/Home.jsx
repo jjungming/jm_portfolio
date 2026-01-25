@@ -1,6 +1,12 @@
 import React from 'react';
 import styles from './Home.module.css';
 
+const scrollTo = (id) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+};
+
 /* 메인 화면 */
 const Home = () => {
   return (
@@ -22,7 +28,7 @@ const Home = () => {
         </h2>
 
         {/* 메인 화면 버튼 */}
-        <button id="home-sentinel" className={styles.homeButton}>더 알아보기</button>
+        <button id="home-sentinel" onClick={() => scrollTo("about")} className={styles.homeButton} type="button">더 알아보기</button>
 
       </div>
 

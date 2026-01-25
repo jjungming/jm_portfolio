@@ -1,5 +1,6 @@
 *, :after, :before {
   box-sizing: border-box;
+  font-family: __Black_Han_Sans_be47f4, __Black_Han_Sans_Fallback_be47f4;
 }
 
 img, svg {
@@ -16,12 +17,44 @@ button {
   padding: 0;
   background-color: unset;
   border: none;
-  text-transform: none;
-  margin: 0;
-  font-size: inherit;
   transition: color .2s ease;
 }
 
-button:not(:disabled) {
+button, select {
+  text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled),
+[type=submit]:not(:disabled), button:not(:disabled) {
   cursor: pointer;
+}
+
+[type=button], [type=reset], [type=submit], button{
+  -webkit-appearance: button;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h3, h3 {
+  font-size: calc(1.3rem + .6vw);
 }

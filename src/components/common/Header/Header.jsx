@@ -32,14 +32,14 @@ const Header = () => {
       <div className={styles.headerContent}>
         
         {/* headerTitle 부분 */}
-        <button onClick={() => scrollTo("home")} className={styles.headerTitleButton}>JM's Portfolio</button>
+        <button onClick={() => scrollTo("home")} className={styles.headerTitleButton} type="button">JM's Portfolio</button>
       
         {/* headerSectionTitle 부분 */}
         <div className={styles.headerSectionTitle}>
-          <button onClick={() => scrollTo("about")} className={styles.headerSectionButton}>About</button>
-          <button onClick={() => scrollTo("skills")} className={styles.headerSectionButton}>Skills</button>
-          <button onClick={() => scrollTo("archiving")} className={styles.headerSectionButton}>Archiving</button>
-          <button onClick={() => scrollTo("projects")}className={styles.headerSectionButton}>Projects</button>
+          <button onClick={() => scrollTo("about")} className={styles.headerSectionButton} type="button">About</button>
+          <button onClick={() => scrollTo("skills")} className={styles.headerSectionButton} type="button">Skills</button>
+          <button onClick={() => scrollTo("archiving")} className={styles.headerSectionButton} type="button">Archiving</button>
+          <button onClick={() => scrollTo("projects")}className={styles.headerSectionButton} type="button">Projects</button>
         </div>
       </div>
 

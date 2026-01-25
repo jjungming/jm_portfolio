@@ -21,7 +21,7 @@
 }
 
 .homeTitle {
-    font-size: 3.75rem;
+    font-size: 4rem;
     color: hsla(0, 0%, 100%, .9);
     line-height: 1.25;
     word-break: keep-all;
@@ -41,4 +41,13 @@
     border-radius: 10rem;
     color: #fff;
     transition: background-color .2s ease-in-out;
+}
+
+@media (max-width:992px) {
+    .homeTitle {
+        font-size: 2.75em;
+    }
+    .homeDescription {
+        font-size: 1rem;
+    }
 }
