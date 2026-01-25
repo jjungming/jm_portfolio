@@ -26,7 +26,7 @@ const projects = [
     id: 2,
     badge: '팀 프로젝트 (React)',
     period: '2024.08 - 2024.09 (팀 프로젝트)',
-    title: 'Danpoon',
+    title: 'Klay',
     subtitle: '팀 프론트엔드 프로젝트',
     description:
       '팀 프로젝트로 진행한 웹 서비스로, 프론트엔드 개발을 담당했습니다.',
@@ -38,7 +38,7 @@ const projects = [
     ],
     stacks: ['React', 'JavaScript', 'CSS'],
     links: {
-      github: 'https://github.com/JJungMing/2024_DANPOON_TEAM_56_FE',
+      github: 'https://github.com/9oormthon-univ/2024_DANPOON_TEAM_56_FE',
       demo: ''
     }
   },
