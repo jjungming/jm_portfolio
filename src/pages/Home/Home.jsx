@@ -4,7 +4,7 @@ import styles from './Home.module.css';
 /* 메인 화면 */
 const Home = () => {
   return (
-    <div className={styles.homeContainer}>
+    <div id="home" className={styles.homeContainer}>
       <div className={styles.homeContenet}>
         
         {/* 메인 화면 타이틀 */}
@@ -22,7 +22,8 @@ const Home = () => {
         </h2>
 
         {/* 메인 화면 버튼 */}
-        <button className={styles.homeButton}>더 알아보기</button>
+        <button id="home-sentinel" className={styles.homeButton}>더 알아보기</button>
+
       </div>
 
     </div>

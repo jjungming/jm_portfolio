@@ -7,6 +7,7 @@ import Archiving from '../src/components/sections/Archiving/Archiving';
 import Projects from '../src/components/sections/Projects/Projects';
 
 function App() {
+
   return (
     <div className={styles.appContainer}>
       <Header />
