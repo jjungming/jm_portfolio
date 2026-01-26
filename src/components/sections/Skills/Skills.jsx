@@ -1,34 +1,7 @@
 import React from 'react';
 import styles from './Skills.module.css';
 import SectionTitle from '../../common/SectionTitle/SectionTitle';
-
-import languageImg from '../../../img/Skills/free-icon-language.png';
-import frontendImg from '../../../img/Skills/free-icon-frontend.png';
-import backendImg from '../../../img/Skills/free-icon-backend.png';
-import devopsImg from '../../../img/Skills/free-icon-dev.png';
-
-const skills = [
-  {
-    image: languageImg,
-    title: 'Language',
-    items: ['TypeScript', 'JavaScript', 'Python', 'Java'],
-  },
-  {
-    image: frontendImg,
-    title: 'Frontend',
-    items: ['React', 'Next.js', 'Zustand', 'React Query', 'Sass', 'Tailwind CSS'],
-  },
-  {
-    image: backendImg,
-    title: 'Backend',
-    items: ['Spring Boot', 'JPA', 'Firebase', 'MySQL'],
-  },
-  {
-    image: devopsImg,
-    title: 'DevOps',
-    items: ['Docker', 'AWS', 'Vercel', 'GitHub'],
-  },
-];
+import skills from '../../../data/skills';
 
 /* Frontend / Backend / Tools 등 기술 카드 렌더링 */
 const Skills = () => {

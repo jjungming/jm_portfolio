@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './About.module.css';
 import SectionTitle from '../../common/SectionTitle/SectionTitle';
-import abouts from '../../../data/about';
+import abouts from '../../../data/abouts';
 
 /* 자기소개 섹션 */
 const About = () => {

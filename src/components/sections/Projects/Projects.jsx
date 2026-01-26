@@ -24,17 +24,17 @@ const Projects = () => {
 
         <div className={styles.projectList}>
           {projects.map((project) => (
-            <article 
+            <div
               key={project.id} 
               className={`${styles.card} ${flippedCards[project.id] ? styles.flipped : ''}`}
               onClick={() => handleCardClick(project.id)}
             >
               {/* 앞면 */}
               <div className={styles.cardFront}>
-                <span className={styles.badge}>{project.badge}</span>
+                <h4 className={styles.badge}>{project.badge}</h4>
                 <p className={styles.period}>{project.period}</p>
-                <p className={styles.description}>{project.description}</p>
-                <div className={styles.clickHint}>클릭하여 상세 정보 보기</div>
+                <h5 className={styles.description}>{project.description}</h5>
+                <button className={styles.clickButton}>클릭하여 상세 정보 보기</button>
               </div>
 
               {/* 뒷면 */}
@@ -70,7 +70,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </article>
+            </div>
           ))}
         </div>
 
