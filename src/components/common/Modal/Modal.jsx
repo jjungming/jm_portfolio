@@ -1,15 +1,62 @@
-import React from 'react';
+import { useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
 
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isOpen, title, images, index, onClose, onPrev, onNext }) => {
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft') onPrev();
+      if (e.key === 'ArrowRight') onNext();
+    };
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isOpen, onClose, onPrev, onNext]);
+
   if (!isOpen) return null;
 
-  return (
-    <div className={styles.modalOverlay} onClick={onClose}>
-      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        {children}
+  return createPortal(
+    <div
+      className={styles.overlay}
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+    >
+      <div
+        className={styles.content}
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* <div className={styles.header}>
+          <h4>{title}</h4>
+          <span>{index + 1} / {images.length}</span>
+        </div> */}
+
+        <div className={styles.body}>
+          
+
+          <img
+            src={images[index]}
+            alt={`${title} 확대 이미지`}
+            className={styles.image}
+          />
+
+          
+        </div>
+        <div className={styles.footer}>
+          {images.length > 1 && (
+            <button className={styles.nav} onClick={onPrev}>‹</button>
+          )}
+          <span>{index + 1} / {images.length}</span>
+          {images.length > 1 && (
+            <button className={styles.nav} onClick={onNext}>›</button>
+          )}
+        </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 
