@@ -8,7 +8,7 @@ const projects = [
     title: 'JM Portfolio',
     subtitle: '개인 포트폴리오 웹사이트',
     description:
-      '개인 프로젝트와 기술 스택을 정리하기 위해 제작한 포트폴리오 웹사이트입니다.',
+      '개인 프로젝트와 기술 스택을 정리하기 위해 제작한 포트폴리오 웹사이트',
     highlights: [
       'About / Skills / Projects 섹션을 컴포넌트 단위로 분리',
       'map 기반 데이터 렌더링으로 프로젝트 관리',

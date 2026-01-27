@@ -1,1 +1,73 @@
 /* 프로젝트 상세 보기용 공통 모달 컴포넌트 */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+  
+.content {
+    width: min(1000px, 90vw);
+    max-height: 150vh;
+    background: #fff;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #eee;
+}
+  
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+  
+.counter {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+  
+.body {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+  
+.image {
+    width: 100%;
+    height: min(70vh, 650px);
+    object-fit: contain;
+    background: #f3f3f3;
+    border-radius: 0.75rem;
+}
+  
+.nav {
+    border: none;
+    background: rgba(0, 0, 0, 0.08);
+    height: auto;
+    border-radius: 0.75rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+}
+  
+@media (max-width: 600px) {
+    .body {
+      grid-template-columns: 2.5rem 1fr 2.5rem;
+    }
+}
+  
