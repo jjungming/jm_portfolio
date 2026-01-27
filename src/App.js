@@ -16,6 +16,7 @@ function App() {
       <section id="skills"><Skills /></section>
       <section id="archiving"><Archiving /></section>
       <section id="projects"><Projects /></section>
+      <div><button>위로가기 버튼</button></div>
     </div>
   );
 }

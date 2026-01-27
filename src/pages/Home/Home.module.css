@@ -25,6 +25,7 @@
     color: hsla(0, 0%, 100%, .9);
     line-height: 1.25;
     word-break: keep-all;
+    margin-bottom: 2rem;
 }
 
 .homeDescription {

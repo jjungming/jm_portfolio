@@ -23,7 +23,7 @@ const Home = () => {
         {/* 메인 화면 내용 */}
         <h2 className={styles.homeDescription}>
           안녕하세요.<br/>
-          문제 해결과 협업을 중요하게 생각하는<br/>
+          사용자의 흐름을 고민하고 UI를 구현하는<br/>
           프론트엔드 개발자입니다.
         </h2>
 

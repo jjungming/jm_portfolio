@@ -24,12 +24,12 @@ const projects = [
 
   {
     id: 2,
-    badge: '팀 프로젝트 (React)',
-    period: '2024.08 - 2024.09 (팀 프로젝트)',
+    badge: '구름톤 유니브 (React)',
+    period: '2024.11 (팀 프로젝트)',
     title: 'Klay',
-    subtitle: '팀 프론트엔드 프로젝트',
+    subtitle: '게임형 서비스 웹 프로젝트',
     description:
-      '팀 프로젝트로 진행한 웹 서비스로, 프론트엔드 개발을 담당했습니다.',
+      '외국인들이 한국 생활에 적응하도록 돕는 게임형 서비스인 웹 프로젝트',
     highlights: [
       'React 기반 UI 컴포넌트 구현',
       '화면 단위 기능 분리 및 구조 설계',
