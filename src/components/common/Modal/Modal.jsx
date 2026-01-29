@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
+import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 
 const Modal = ({ isOpen, title, images, index, onClose, onPrev, onNext }) => {
   useEffect(() => {
@@ -29,29 +30,21 @@ const Modal = ({ isOpen, title, images, index, onClose, onPrev, onNext }) => {
         className={styles.content}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* <div className={styles.header}>
-          <h4>{title}</h4>
-          <span>{index + 1} / {images.length}</span>
-        </div> */}
-
         <div className={styles.body}>
-          
-
           <img
             src={images[index]}
             alt={`${title} 확대 이미지`}
             className={styles.image}
           />
-
-          
         </div>
+
         <div className={styles.footer}>
           {images.length > 1 && (
-            <button className={styles.nav} onClick={onPrev}>‹</button>
+            <button className={styles.nav} onClick={onPrev}><IoChevronBackOutline /></button>
           )}
-          <span>{index + 1} / {images.length}</span>
+          <span className={styles.counter}>{index + 1} / {images.length}</span>
           {images.length > 1 && (
-            <button className={styles.nav} onClick={onNext}>›</button>
+            <button className={styles.nav} onClick={onNext}><IoChevronForwardOutline /></button>
           )}
         </div>
       </div>

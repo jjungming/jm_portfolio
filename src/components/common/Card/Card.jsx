@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import styles from './Card.module.css';
 import projectImages from '../../../data/projectImages';
 import Modal from '../../common/Modal/Modal';
+import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 
 const Card = ({ project }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [imgIndex, setImgIndex] = useState(0);
-
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalIndex, setModalIndex] = useState(0);
 
@@ -17,23 +15,9 @@ const Card = ({ project }) => {
 
   const openModal = (e) => {
     e.stopPropagation();
-    setModalIndex(imgIndex);
+    setModalIndex(0);
     setIsModalOpen(true);
   };
-
-  // const handlePrevImg = (e) => {
-  //   e.stopPropagation();
-  //   const images = projectImages[project.id] || [];
-  //   if (images.length === 0) return;
-  //   setImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
-  // };
-
-  // const handleNextImg = (e) => {
-  //   e.stopPropagation();
-  //   const images = projectImages[project.id] || [];
-  //   if (images.length === 0) return;
-  //   setImgIndex((prev) => (prev + 1) % images.length);
-  // };
 
   const images = projectImages[project.id] || [];
 
@@ -48,18 +32,14 @@ const Card = ({ project }) => {
         <p className={styles.period}>{project.period}</p>
         <div className={styles.imgBox}>
           <div className={styles.imgCollection} onClick={openModal}>
-            <img
-              src= {images[imgIndex]}
-              alt={`${project.title} 스크린샷 ${imgIndex + 1}`}
-            />
-            {/* {images.length > 0 ? (
+            {images.length > 0 ? (
               <img
-                src={images[imgIndex]}
-                alt={`${project.title} 스크린샷 ${imgIndex + 1}`}
+                src={images[0]}
+                alt={`${project.title} 스크린샷 1`}
               />
             ) : (
               <span className={styles.imgPlaceholder}>이미지 없음</span>
-            )} */}
+            )}
           </div>
           <Modal
             isOpen={isModalOpen}
@@ -78,36 +58,13 @@ const Card = ({ project }) => {
               )
             }
           />
-          {/* {images.length > 1 && (
-            <div className={styles.imgNav}>
-              <button
-                type="button"
-                className={styles.imgNavBtn}
-                onClick={handlePrevImg}
-                aria-label="이전 이미지"
-              >
-                ‹
-              </button>
-              <span className={styles.imgCounter} aria-live="polite">
-                {imgIndex + 1} / {images.length}
-              </span>
-              <button
-                type="button"
-                className={styles.imgNavBtn}
-                onClick={handleNextImg}
-                aria-label="다음 이미지"
-              >
-                ›
-              </button>
-            </div>
-          )} */}
         </div>
         <h5 className={styles.description}>{project.description}</h5>
-        <button onClick={handleCardClick} className={styles.clickButton}>클릭하여 상세 정보 보기</button>
+        <button onClick={handleCardClick} className={styles.clickButtonFw}><IoChevronForwardOutline /></button>
       </div>
 
       {/* 뒷면 */}
-      <div onClick={handleCardClick} className={styles.cardBack}>
+      <div className={styles.cardBack}>
         <h3 className={styles.projectTitle}>{project.title}</h3>
         <p className={styles.subtitle}>{project.subtitle}</p>
         
@@ -138,6 +95,7 @@ const Card = ({ project }) => {
             GitHub
           </a>
         </div>
+        <button onClick={handleCardClick} className={styles.clickButtonBk}><IoChevronBackOutline /></button>
       </div>
     </div>
   );
