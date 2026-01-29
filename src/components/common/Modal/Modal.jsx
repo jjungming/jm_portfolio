@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
-import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
+import { IoReturnDownBackOutline, IoReturnDownForwardOutline } from "react-icons/io5";
 
 const Modal = ({ isOpen, title, images, index, onClose, onPrev, onNext }) => {
   useEffect(() => {
@@ -40,11 +40,11 @@ const Modal = ({ isOpen, title, images, index, onClose, onPrev, onNext }) => {
 
         <div className={styles.footer}>
           {images.length > 1 && (
-            <button className={styles.nav} onClick={onPrev}><IoChevronBackOutline /></button>
+            <button className={styles.nav} onClick={onPrev}><IoReturnDownBackOutline /></button>
           )}
           <span className={styles.counter}>{index + 1} / {images.length}</span>
           {images.length > 1 && (
-            <button className={styles.nav} onClick={onNext}><IoChevronForwardOutline /></button>
+            <button className={styles.nav} onClick={onNext}><IoReturnDownForwardOutline /></button>
           )}
         </div>
       </div>
