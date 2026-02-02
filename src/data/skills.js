@@ -8,22 +8,22 @@ const skills = [
   {
     image: languageImg,
     title: 'Language',
-    items: ['JavaScript', 'HTML5', 'CSS3', 'Python', 'Java'],
+    items: ['JavaScript', 'TypeScript', 'HTML5', 'CSS3', 'Python'],
   },
   {
     image: frontendImg,
     title: 'Frontend',
-    items: ['React', 'React Native', 'Zustand', 'Styled-components'],
+    items: ['React', 'React Native', 'Axios', 'Kakao Map API'],
   },
   {
     image: backendImg,
     title: 'Backend',
-    items: ['Django', 'OpenCV', 'SQL', 'Database'],
+    items: ['Django', 'OpenCV', 'SQL'],
   },
   {
     image: devopsImg,
     title: 'DevOps',
-    items: ['GitHub', 'Vercel', 'Figama', 'Notion'],
+    items: ['GitHub', 'Vercel', 'Notion', 'Figma'],
   },
 ];
 

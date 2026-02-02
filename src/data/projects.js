@@ -32,14 +32,14 @@ const projects = [
       '외국인들이 한국 생활에 적응하도록 돕는 게임형 웹사이트',
     highlights: [
       '카카오 OAuth 로그인 연동을 통한 사용자 인증 기능 개발',
-      'API 연동으로 사용자 정보 및 미션 상태를 동적으로 렌더링',
+      'Axios 기반 API 통신으로 사용자 및 미션 상태를 관리',
       'CSS Module을 활용하여 스타일 충돌 방지',
       'Vercel을 통한 프론트엔드 배포 및 운영 경험'
     ],
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/2024_DANPOON_FE.git" },
     ],
-    techStack: ["React", "react-router-dom", "Axios", "CSS Modules", "React-Icons", "Vercel"]
+    techStack: ["React", "react-router-dom", "Axios", "CSS Modules", "React-Icons", "Vercel"],
   },
 
   {
@@ -54,14 +54,12 @@ const projects = [
       'React Native 프로젝트 구조를 구성하여 모바일 앱 개발 환경 구축',
       'TypeScript를 적용해 화면 및 컴포넌트 단위 타입 안정성 확보',
       '카카오 Map API를 활용해 지도 화면에 마커를 표시하고, 중심 좌표 이동 및 마커 클릭 이벤트 처리',
-      '지도 상호작용을 통해 사용자 위치 및 주차장 정보를 직관적으로 확인할 수 있는 UI 구현',
       'screens / components 구조로 화면과 UI 요소를 분리하여 유지보수성 개선',
-      'navigation 구조를 설계하고 App.tsx를 중심으로 앱 진입 및 화면 전환 흐름 구현'
     ],
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/ParkingGo_FE.git" },
     ],
-    techStack: [ "React Native", "TypeScript", "React Navigation", "Kakao Map API"]
+    techStack: ["React Native", "TypeScript", "React Navigation", "Kakao Map API"]
   },
   // {
   //   id: 3,
