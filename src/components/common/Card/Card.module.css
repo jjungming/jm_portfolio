@@ -142,6 +142,11 @@
   border-radius: 999px;
 }
 
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
 .links a {
   font-size: 0.85rem;
   font-weight: 600;
@@ -149,7 +154,7 @@
   color: rgba(0,0,0,.75);
 }
 
-.links:hover a {
+.links a:hover {
   text-decoration: underline;
   color: #258ddb;
 }

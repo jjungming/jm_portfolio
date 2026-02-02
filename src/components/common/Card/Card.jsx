@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Card.module.css';
 import projectImages from '../../../data/projectImages';
 import Modal from '../../common/Modal/Modal';
-import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
+import { IoReturnDownBackOutline, IoReturnDownForwardOutline } from "react-icons/io5";
 
 const Card = ({ project }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -60,7 +60,7 @@ const Card = ({ project }) => {
           />
         </div>
         <h5 className={styles.description}>{project.description}</h5>
-        <button onClick={handleCardClick} className={styles.clickButtonFw}><IoChevronForwardOutline /></button>
+        <button onClick={handleCardClick} className={styles.clickButtonFw}><IoReturnDownForwardOutline /></button>
       </div>
 
       {/* 뒷면 */}
@@ -77,25 +77,28 @@ const Card = ({ project }) => {
 
         {/* 기술 스택 */}
         <div className={styles.stacks}>
-          {project.stacks.map((stack, idx) => (
+          {project.techStack.map((techStack, idx) => (
             <span key={idx} className={styles.stack}>
-              {stack}
+              {techStack}
             </span>
           ))}
         </div>
 
         {/* 링크 */}
         <div className={styles.links}>
-          <a
-            href={project.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-          >
-            GitHub
-          </a>
+          {project.links.map((link, idx) => (
+            <a
+              key={idx}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {link.label}
+            </a>
+          ))}
         </div>
-        <button onClick={handleCardClick} className={styles.clickButtonBk}><IoChevronBackOutline /></button>
+        <button onClick={handleCardClick} className={styles.clickButtonBk}><IoReturnDownBackOutline /></button>
       </div>
     </div>
   );
