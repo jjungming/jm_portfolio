@@ -5,6 +5,7 @@ import About from '../src/components/sections/About/About';
 import Skills from '../src/components/sections/Skills/Skills';
 import Archiving from '../src/components/sections/Archiving/Archiving';
 import Projects from '../src/components/sections/Projects/Projects';
+import Footer from '../src/pages/footer/footer';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <section id="skills"><Skills /></section>
       <section id="archiving"><Archiving /></section>
       <section id="projects"><Projects /></section>
+      <Footer />
     </div>
   );
 }
