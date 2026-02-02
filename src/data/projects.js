@@ -39,11 +39,7 @@ const projects = [
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/2024_DANPOON_FE.git" },
     ],
-<<<<<<< HEAD
-    techStack: ["React", "React-router-dom", "Axios", "CSS Modules", "React-Icons", "Vercel"]
-=======
     techStack: ["React", "react-router-dom", "Axios", "CSS Modules", "React-Icons", "Vercel"],
->>>>>>> develop
   },
 
   {
@@ -58,11 +54,7 @@ const projects = [
       'React Native 프로젝트 구조를 구성하여 모바일 앱 개발 환경 구축',
       'TypeScript를 적용해 화면 및 컴포넌트 단위 타입 안정성 확보',
       '카카오 Map API를 활용해 지도 화면에 마커를 표시하고, 중심 좌표 이동 및 마커 클릭 이벤트 처리',
-<<<<<<< HEAD
       'navigation 구조를 설계하고 App.tsx를 중심으로 앱 진입 및 화면 전환 흐름 구현'
-=======
-      'screens / components 구조로 화면과 UI 요소를 분리하여 유지보수성 개선',
->>>>>>> develop
     ],
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/ParkingGo_FE.git" },
