@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
+<<<<<<< HEAD
 import { IoMenuOutline } from "react-icons/io5";
+=======
+import { IoMenu } from "react-icons/io5";
+>>>>>>> develop
 
 const scrollTo = (id) => {
   const el = document.getElementById(id);
@@ -31,7 +35,11 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
+<<<<<<< HEAD
     const sectionIds = ["home", "about", "skills", "archiving", "projects"];
+=======
+    const sectionIds = ["about", "skills", "archiving", "projects"];
+>>>>>>> develop
   
     const observer = new IntersectionObserver(
       (entries) => {
@@ -70,7 +78,11 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+<<<<<<< HEAD
   const homeNO = isScrolled && activeSection !== "home";
+=======
+  const homeLine = isScrolled && activeSection !== "home";
+>>>>>>> develop
 
   return (
     <header className={`${styles.headerContainer} ${isScrolled ? styles.scrolled : ''}`}>
@@ -81,6 +93,7 @@ const Header = () => {
       
         {/* headerSectionTitle 부분 */}
         <div className={styles.headerSectionTitle}>
+<<<<<<< HEAD
           <button onClick={() => scrollTo("about")} 
             className={`${styles.headerSectionButton} 
             ${ homeNO && activeSection === "about" ? styles.active : "" }`} 
@@ -104,6 +117,39 @@ const Header = () => {
             ${ homeNO && activeSection === "projects" ? styles.active : "" }`}
             type="button">
             Projects
+=======
+          <button 
+            onClick={() => scrollTo("about")} 
+            className={`${styles.headerSectionButton} ${
+              homeLine && activeSection === "about" ? styles.active : ""
+            }`} 
+            type="button">
+              About
+          </button>
+          <button 
+            onClick={() => scrollTo("skills")} 
+            className={`${styles.headerSectionButton} ${
+              homeLine && activeSection === "skills" ? styles.active : ""
+            }`} 
+            type="button">
+              Skills
+          </button>
+          <button 
+            onClick={() => scrollTo("archiving")} 
+            className={`${styles.headerSectionButton} ${
+              homeLine && activeSection === "archiving" ? styles.active : ""
+            }`} 
+            type="button">
+              Archiving
+          </button>
+          <button 
+            onClick={() => scrollTo("projects")} 
+            className={`${styles.headerSectionButton} ${
+              homeLine && activeSection === "projects" ? styles.active : ""
+            }`} 
+            type="button">
+              Projects
+>>>>>>> develop
           </button>
         </div>
 
@@ -114,9 +160,14 @@ const Header = () => {
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((v) => !v)}
         >
+<<<<<<< HEAD
           <IoMenuOutline size={30} />
         </button>
 
+=======
+          <IoMenu size={35}/>
+        </button>
+>>>>>>> develop
       </div>
 
       <div className={`${styles.mobileNav} ${isMenuOpen ? styles.open : ""}`}>
