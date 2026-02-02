@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+JM Portfolio Web Site
+__________________________________
+2025.01 ~ 2026.02 (1人 개인 프로젝트)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔗 Deployment URL
+https://mini-portfolio-personal.vercel.app/
 
-## Available Scripts
+📌 Summary
 
-In the project directory, you can run:
+프론트엔드 개발자 개인 포트폴리오 웹사이트
 
-### `npm start`
+프로젝트 및 기술 스택을 한눈에 보여주기 위한 포트폴리오 사이트
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+스크롤 흐름에 맞춘 Header 인터랙션 및 섹션 네비게이션 구현
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+사용자 위치를 명확히 인지할 수 있도록 UI/UX 설계
 
-### `npm test`
+주요 기능: 자기소개, 기술 스택, 프로젝트, 아카이빙
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🤔 Background
 
-### `npm run build`
+프론트엔드 개발자로 취업을 준비하면서,
+단순히 결과물만 나열하는 포트폴리오가 아닌
+“어떻게 고민하고 구현했는지”를 보여줄 수 있는 웹사이트가 필요하다고 느꼈어요.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+그래서 디자인부터 컴포넌트 구조, 스크롤 기반 인터랙션까지
+직접 고민하며 개인 포트폴리오 웹사이트를 제작하게 되었습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔍 Meaning
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+이 프로젝트를 통해 사용자 스크롤 흐름에 따라 UI가 어떻게 반응해야 자연스러운지 깊이 고민해볼 수 있었어요.
+특히 IntersectionObserver를 활용하여 섹션 위치에 따라 헤더 상태와 네비게이션을 제어하며,
+작은 인터랙션 하나가 사용자 경험에 미치는 영향을 체감할 수 있었습니다.
 
-### `npm run eject`
+또한, CSS Module 기반 스타일링을 통해
+스타일 충돌을 방지하고 유지보수하기 쉬운 구조를 설계하는 경험을 쌓을 수 있었어요.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔨 Technology Stack(s)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React, JavaScript(ES6+), CSS Module, Vercel
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+⚙️ Setup & Usage
+# Install JavaScript Packages
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Run Frontend Server
+npm start
