@@ -8,7 +8,7 @@ const projects = [
     title: 'JM Portfolio',
     subtitle: '개인 포트폴리오 웹사이트',
     description:
-      'React 기반으로 포트폴리오를 구성하고 Vercel로 배포한 웹사이트',
+      '나만의 포트폴리오를 위한 웹사이트',
     highlights: [
       '섹션 기반 단일 페이지 구성(Home/About/Skills/Projects 등)',
       'map 기반 데이터 렌더링으로 프로젝트 관리',
@@ -19,13 +19,13 @@ const projects = [
       { label: "Site", url: "https://jm-portfolio-blush.vercel.app" },
       { label: "GitHub", url: "https://github.com/JJungMing/JM_portfolio" },
     ],
-    techStack: ["React", "JavaScript", "CSS", "Vercel"],
+    techStack: ["React", "JavaScript", "CSS Modules", "Vercel"],
   },
 
   {
     id: 2,
     badge: '단풍톤 프로젝트 (React)',
-    period: '2024.11 (팀 프로젝트)',
+    period: '2024.11 (6인 팀 프로젝트)',
     title: 'Klay',
     subtitle: '게임형 서비스 웹 프로젝트',
     description:
@@ -39,13 +39,13 @@ const projects = [
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/2024_DANPOON_FE.git" },
     ],
-    techStack: ["React", "react-router-dom", "Axios", "CSS Modules", "React-Icons", "Vercel"]
+    techStack: ["React", "React-router-dom", "Axios", "CSS Modules", "React-Icons", "Vercel"]
   },
 
   {
     id: 3,
     badge: '주차 관리 시스템 (React Native)',
-    period: '2025.1 ~ 2025.11 (팀 프로젝트)',
+    period: '2025.1 ~ 2025.11 (6인 팀 프로젝트)',
     title: 'Parking GO',
     subtitle: '주차장의 빈자리 개수를 제공하는 모바일 앱',
     description:
@@ -54,8 +54,6 @@ const projects = [
       'React Native 프로젝트 구조를 구성하여 모바일 앱 개발 환경 구축',
       'TypeScript를 적용해 화면 및 컴포넌트 단위 타입 안정성 확보',
       '카카오 Map API를 활용해 지도 화면에 마커를 표시하고, 중심 좌표 이동 및 마커 클릭 이벤트 처리',
-      '지도 상호작용을 통해 사용자 위치 및 주차장 정보를 직관적으로 확인할 수 있는 UI 구현',
-      'screens / components 구조로 화면과 UI 요소를 분리하여 유지보수성 개선',
       'navigation 구조를 설계하고 App.tsx를 중심으로 앱 진입 및 화면 전환 흐름 구현'
     ],
     links: [

@@ -24,7 +24,6 @@ const Card = ({ project }) => {
   return (
     <div
       className={`${styles.card} ${isFlipped ? styles.flipped : ''}`}
-      
     >
       {/* 앞면 */}
       <div className={styles.cardFront}>
