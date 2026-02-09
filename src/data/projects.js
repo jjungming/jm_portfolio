@@ -52,9 +52,9 @@ const projects = [
       '실시간으로 주차장 빈자리 정보를 확인하는 모바일 앱',
     highlights: [
       'React Native 프로젝트 구조를 구성하여 모바일 앱 개발 환경 구축',
-      'TypeScript를 적용해 화면 및 컴포넌트 단위 타입 안정성 확보',
       '카카오 Map API를 활용해 지도 화면에 마커를 표시하고, 중심 좌표 이동 및 마커 클릭 이벤트 처리',
-      'screens / components 구조로 화면과 UI 요소를 분리하여 유지보수성 개선',
+      '주차장 상세 화면에서 즐겨찾기 추가/삭제 기능을 구현하고, 상태에 따라 아이콘을 동적으로 렌더링',
+      'FlatList를 활용해 즐겨찾기 목록 화면을 구성하고, 선택 시 상세 화면으로 이동하도록 구현',
     ],
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/ParkingGo_FE.git" },

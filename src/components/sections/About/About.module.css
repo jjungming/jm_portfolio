@@ -1,7 +1,6 @@
 /* About 섹션 레이아웃 및 타이포그래피 */
 .aboutContainer {
     background-color: #ffffff;
-    /* background-color: #fd0000; */
 }
 
 .aboutContent {
@@ -31,6 +30,7 @@
     margin: 0 auto;
     opacity: .8;
 }
+
 .aboutItemIconWrapper{
     position: relative;
     flex-shrink: 0;
@@ -58,5 +58,15 @@
 @media (max-width: 992px) {
     .aboutInfoWrapper {
         width: 50%;
+    }
+    .aboutItemIcon {
+        font-size: 2rem;
+    }
+    .aboutItemLabel {
+        margin-bottom: .3rem;
+        font-size: 1rem;
+    }
+    .aboutItemValue {
+        font-size: .75rem;
     }
 }

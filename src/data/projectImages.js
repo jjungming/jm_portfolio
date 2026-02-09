@@ -17,9 +17,7 @@ import ParkingGO_3 from '../img/Projects/ParkingGo/ParkingGO_3.png';
 const projectImages = {
   1: [portfolioHome, portfolioAbout, portfolioArchiving],
   2: [Klay_1, Klay_2, Klay_3, Klay_4],
-  3: [ParkingGO_1, ParkingGO_2, ParkingGO_3],
-  // 3: [djangoLottoImage1, ...],        // 예시: Django Lotto 이미지 추가 시
-  // 4: [djangoOpenCVImage1, ...],      // 예시: Django OpenCV 이미지 추가 시
+  3: [ParkingGO_1, ParkingGO_2, ParkingGO_3]
 };
 
 export default projectImages;
