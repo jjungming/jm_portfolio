@@ -17,11 +17,7 @@ import ParkingGO_3 from '../img/Projects/ParkingGo/ParkingGO_3.png';
 const projectImages = {
   1: [portfolioHome, portfolioAbout, portfolioArchiving],
   2: [Klay_1, Klay_2, Klay_3, Klay_4],
-<<<<<<< HEAD
-  3: [ParkingGO_1, ParkingGO_2, ParkingGO_3],
-=======
   3: [ParkingGO_1, ParkingGO_2, ParkingGO_3]
->>>>>>> develop
 };
 
 export default projectImages;

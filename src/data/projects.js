@@ -53,12 +53,8 @@ const projects = [
     highlights: [
       'React Native 프로젝트 구조를 구성하여 모바일 앱 개발 환경 구축',
       '카카오 Map API를 활용해 지도 화면에 마커를 표시하고, 중심 좌표 이동 및 마커 클릭 이벤트 처리',
-<<<<<<< HEAD
-      'navigation 구조를 설계하고 App.tsx를 중심으로 앱 진입 및 화면 전환 흐름 구현'
-=======
       '주차장 상세 화면에서 즐겨찾기 추가/삭제 기능을 구현하고, 상태에 따라 아이콘을 동적으로 렌더링',
       'FlatList를 활용해 즐겨찾기 목록 화면을 구성하고, 선택 시 상세 화면으로 이동하도록 구현',
->>>>>>> develop
     ],
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/ParkingGo_FE.git" },
