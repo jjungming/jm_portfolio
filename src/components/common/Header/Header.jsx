@@ -122,7 +122,7 @@ const Header = () => {
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((v) => !v)}
         >
-          <IoMenu size={35}/>
+          <IoMenu/>
         </button>
       </div>
 

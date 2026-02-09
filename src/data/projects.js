@@ -61,47 +61,6 @@ const projects = [
     ],
     techStack: ["React Native", "TypeScript", "React Navigation", "Kakao Map API"]
   },
-  // {
-  //   id: 3,
-  //   badge: 'Django 웹 프로젝트',
-  //   period: '2024.06 (1인 개인 프로젝트)',
-  //   title: 'Django Lotto',
-  //   subtitle: '로또 번호 생성 웹 서비스',
-  //   description:
-  //     'Django를 활용해 로또 번호 생성 기능을 구현한 웹 프로젝트입니다.',
-  //   highlights: [
-  //     'Django MVC 구조 기반 웹 개발',
-  //     'URL 라우팅과 View 로직 구현',
-  //     '템플릿 렌더링을 통한 화면 구성',
-  //     '기본 CRUD 흐름 학습'
-  //   ],
-  //   stacks: ['Python', 'Django', 'HTML', 'CSS'],
-  //   links: {
-  //     github: 'https://github.com/JJungMing/django_lotto',
-  //     demo: ''
-  //   }
-  // },
-
-  // {
-  //   id: 4,
-  //   badge: 'Django + OpenCV',
-  //   period: '2024.07 (1인 개인 프로젝트)',
-  //   title: 'Django OpenCV',
-  //   subtitle: '이미지 처리 웹 프로젝트',
-  //   description:
-  //     'Django 웹 환경에서 OpenCV를 연동하여 이미지 처리 기능을 구현한 프로젝트입니다.',
-  //   highlights: [
-  //     'OpenCV 기반 이미지 처리 기능 구현',
-  //     'Django 서버와 이미지 처리 로직 연동',
-  //     '사용자 입력 → 처리 → 결과 출력 흐름 구현',
-  //     'Python 외부 라이브러리 연동 경험'
-  //   ],
-  //   stacks: ['Python', 'Django', 'OpenCV'],
-  //   links: {
-  //     github: 'https://github.com/JJungMing/django_opencv',
-  //     demo: ''
-  //   }
-  // }
 ];
 
 export default projects;
