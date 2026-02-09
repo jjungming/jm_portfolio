@@ -2,7 +2,7 @@
 .card {
   position: relative;
   width: calc((100% - 2rem) / 2);
-  height: 400px;
+  height: 420px;
   perspective: 1000px;
 }
 
@@ -170,5 +170,9 @@
 @media (max-width: 992px) {
   .card {
     width: 100%;
+    height: 450px;
+  }
+  .highlights li {
+    font-size: 0.8rem;
   }
 }

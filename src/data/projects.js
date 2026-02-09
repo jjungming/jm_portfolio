@@ -52,56 +52,19 @@ const projects = [
       '실시간으로 주차장 빈자리 정보를 확인하는 모바일 앱',
     highlights: [
       'React Native 프로젝트 구조를 구성하여 모바일 앱 개발 환경 구축',
-      'TypeScript를 적용해 화면 및 컴포넌트 단위 타입 안정성 확보',
       '카카오 Map API를 활용해 지도 화면에 마커를 표시하고, 중심 좌표 이동 및 마커 클릭 이벤트 처리',
+<<<<<<< HEAD
       'navigation 구조를 설계하고 App.tsx를 중심으로 앱 진입 및 화면 전환 흐름 구현'
+=======
+      '주차장 상세 화면에서 즐겨찾기 추가/삭제 기능을 구현하고, 상태에 따라 아이콘을 동적으로 렌더링',
+      'FlatList를 활용해 즐겨찾기 목록 화면을 구성하고, 선택 시 상세 화면으로 이동하도록 구현',
+>>>>>>> develop
     ],
     links: [
       { label: "GitHub", url: "https://github.com/JJungMing/ParkingGo_FE.git" },
     ],
     techStack: ["React Native", "TypeScript", "React Navigation", "Kakao Map API"]
   },
-  // {
-  //   id: 3,
-  //   badge: 'Django 웹 프로젝트',
-  //   period: '2024.06 (1인 개인 프로젝트)',
-  //   title: 'Django Lotto',
-  //   subtitle: '로또 번호 생성 웹 서비스',
-  //   description:
-  //     'Django를 활용해 로또 번호 생성 기능을 구현한 웹 프로젝트입니다.',
-  //   highlights: [
-  //     'Django MVC 구조 기반 웹 개발',
-  //     'URL 라우팅과 View 로직 구현',
-  //     '템플릿 렌더링을 통한 화면 구성',
-  //     '기본 CRUD 흐름 학습'
-  //   ],
-  //   stacks: ['Python', 'Django', 'HTML', 'CSS'],
-  //   links: {
-  //     github: 'https://github.com/JJungMing/django_lotto',
-  //     demo: ''
-  //   }
-  // },
-
-  // {
-  //   id: 4,
-  //   badge: 'Django + OpenCV',
-  //   period: '2024.07 (1인 개인 프로젝트)',
-  //   title: 'Django OpenCV',
-  //   subtitle: '이미지 처리 웹 프로젝트',
-  //   description:
-  //     'Django 웹 환경에서 OpenCV를 연동하여 이미지 처리 기능을 구현한 프로젝트입니다.',
-  //   highlights: [
-  //     'OpenCV 기반 이미지 처리 기능 구현',
-  //     'Django 서버와 이미지 처리 로직 연동',
-  //     '사용자 입력 → 처리 → 결과 출력 흐름 구현',
-  //     'Python 외부 라이브러리 연동 경험'
-  //   ],
-  //   stacks: ['Python', 'Django', 'OpenCV'],
-  //   links: {
-  //     github: 'https://github.com/JJungMing/django_opencv',
-  //     demo: ''
-  //   }
-  // }
 ];
 
 export default projects;

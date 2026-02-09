@@ -68,8 +68,14 @@ button:hover {
     display: none;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
     width: 3.5rem;
     height: 3rem;
+=======
+    font-size: 2rem;
+    width: 3rem;
+    height: 2.5rem;
+>>>>>>> develop
     padding: .5rem 0;
     border: 2px solid rgba(0, 0, 0, .1);
     border-radius: .25rem;

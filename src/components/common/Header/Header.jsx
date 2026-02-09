@@ -5,7 +5,15 @@ import { IoMenu } from "react-icons/io5";
 const scrollTo = (id) => {
   const el = document.getElementById(id);
   if (!el) return;
-  el.scrollIntoView({ behavior: "smooth", block: "start" });
+  
+  const headerOffset = 40;
+  const elementTop = el.getBoundingClientRect().top + window.scrollY;
+  const offsetPosition = elementTop - headerOffset;
+  
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth",
+  });
 };
 
 /* 로고 + 섹션 이동 네비(About, Skills, Projects 등) */
@@ -123,7 +131,7 @@ const Header = () => {
           aria-expanded={isMenuOpen}
           onClick={() => setIsMenuOpen((v) => !v)}
         >
-          <IoMenu size={35}/>
+          <IoMenu/>
         </button>
       </div>
 
